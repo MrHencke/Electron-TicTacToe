@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<meta
+			http-equiv="X-Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+		<div class="game-board">
+			<input class="buttonbox" type="button" id="button1" value="Boks1" />
+			<input class="buttonbox" type="button" id="button2" value="Boks2" />
+			<input class="buttonbox" type="button" id="button3" value="Boks3" />
+			<input class="buttonbox" type="button" id="button4" value="Boks4" />
+			<input class="buttonbox" type="button" id="button5" value="Boks5" />
+			<input class="buttonbox" type="button" id="button6" value="Boks6" />
+			<input class="buttonbox" type="button" id="button7" value="Boks7" />
+			<input class="buttonbox" type="button" id="button8" value="Boks8" />
+			<input class="buttonbox" type="button" id="button9" value="Boks9" />
+		</div>
+		<script src="gamelogic.js"></script>
+	</body>
 </html>
