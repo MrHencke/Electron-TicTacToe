@@ -77,10 +77,6 @@ module.exports = {
 			document.getElementById("title").innerHTML = `${winner} won the round!`;
 			document.getElementById("turn").innerHTML = `Sucks to be you ${loser}!`;
 			gamelogic.refreshBoard();
-			console.log(`${winner.name} won the round!`);
-			console.log("Player 1 SCORE: " + player1.score);
-			console.log("Player 2 SCORE: " + player2.score);
-			console.log(`Sucks to be you ${loser.name}!`);
 			return;
 		}
 	},
@@ -97,6 +93,14 @@ function getTitle(count) {
 	if (count == 2) return "Second";
 	if (count == 3) return "Third";
 	if (count > 3) return `${count}th`;
+}
+
+function sleep(duration) {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve();
+		}, duration * 1000);
+	});
 }
 
 const winningConditions = [
