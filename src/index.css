@@ -1,46 +1,47 @@
 .game-board {
-	display: grid;
-	grid-template-rows: 200px 200px 200px;
-	grid-template-columns: 200px 200px 200px;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.top {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  min-height: 100%;
 }
 
 body {
-	display: flex;
-	justify-content: center;
-}
-
-.box {
-	background: #444;
-	border: 1px solid #555;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(24, 21, 21);
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(to bottom, #7927b2, #fb3182);
 }
 
 .buttonbox {
-	background: #444;
-	border: 1px solid #555;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(24, 21, 21);
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(24, 21, 21);
 }
 
 .xBox {
-	background: #444;
-	border: 1px solid #555;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(255, 0, 0);
+  background: linear-gradient(to bottom, #fd0000, #b0e61e);
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
 }
 
 .oBox {
-	background: rgb(0, 60, 255);
-	border: 1px solid #555;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(24, 21, 21);
+  background: linear-gradient(to bottom, #1100fd, #1fc896);
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
 }

@@ -1,2 +1,17 @@
-var gameBoard = [3][3];
-console.log(gameBoard);
+const gamelogic = require("./gamelogic.js");
+
+let gameState;
+var player1;
+var player2;
+let currentPlayer;
+let count = 0;
+
+gamelogic.initializeGame(); //method call works, checked with consolelog
+
+document.querySelectorAll(".buttonbox").forEach((cell) => {
+	cell.addEventListener("click", function () {
+		gamelogic.setTile(cell.id);
+		gamelogic.restart(gameState);
+		console.log(gameState);
+	});
+});
