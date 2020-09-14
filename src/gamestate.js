@@ -11,7 +11,8 @@ gamelogic.initializeGame(); //method call works, checked with consolelog
 document.querySelectorAll(".buttonbox").forEach((cell) => {
 	cell.addEventListener("click", function () {
 		gamelogic.setTile(cell.id);
-		gamelogic.restart(gameState);
+		gamelogic.winCheck(gameState);
 		console.log(gameState);
+		gamelogic.restart(gameState);
 	});
 });
