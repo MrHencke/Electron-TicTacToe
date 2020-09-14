@@ -42,11 +42,11 @@ module.exports = {
 				if (gs[i * 3 + j] == "O") oCount++;
 				if (xCount == 3) {
 					console.log("X WON");
-					gamelogic.initializeGame(count);
+					//gamelogic.initializeGame(count);
 				}
 				if (oCount == 3) {
 					console.log("X WON");
-					gamelogic.initializeGame(count);
+					//gamelogic.initializeGame(count);
 				}
 			}
 		}
