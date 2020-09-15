@@ -35,7 +35,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: fadeIn 2s;
 	font-size: 199px;
@@ -46,16 +46,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: fadeIn 2s;
 	font-size: 199px;
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
 }
 
 @keyframes fadeIn {
