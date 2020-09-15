@@ -1,6 +1,6 @@
 {
 	"name": "tictactoe-electron",
-	"productName": "tictactoe-electron",
+	"productName": "Henckes Tic Tac Toe Extravaganza",
 	"version": "1.0.0",
 	"description": "A simple electron app to play tictactoe",
 	"main": "src/index.js",
@@ -8,16 +8,33 @@
 		"start": "electron-forge start",
 		"package": "electron-forge package",
 		"make": "electron-forge make",
-		"publish": "electron-forge publish"
+		"publish": "electron-forge publish",
+		"build-installer": "electron-builder"
 	},
 	"keywords": [],
 	"author": {
 		"name": "MrHencke"
 	},
 	"license": "MIT",
+	"build": {},
 	"config": {
 		"forge": {
-			"packagerConfig": {},
+			"packagerConfig": {
+				"appId": "Tic-Tac-Toe",
+				"win": {
+					"target": [
+						"nsis"
+					],
+					"icon": "build/icon.ico"
+				},
+				"nsis": {
+					"installerIcon": "build/icon.ico",
+					"uninstallerIcon": "build/icon.ico",
+					"installDisplayName": "Henckes Tic Tac Toe",
+					"oneClick": false,
+					"allowToChangeInstallationDirectory": true
+				}
+			},
 			"makers": [
 				{
 					"name": "@electron-forge/maker-squirrel",
@@ -42,10 +59,10 @@
 			]
 		}
 	},
-	"dependencies": {
-		"electron-reload": "^1.5.0"
-	},
+	"dependencies": {},
 	"devDependencies": {
+		"electron-builder": "^22.8.0",
+		"electron-reload": "^1.5.0",
 		"@electron-forge/cli": "^6.0.0-beta.53",
 		"@electron-forge/maker-deb": "^6.0.0-beta.53",
 		"@electron-forge/maker-rpm": "^6.0.0-beta.53",

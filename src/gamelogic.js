@@ -43,7 +43,7 @@ module.exports = {
 			currentPlayer = currentPlayer == player1 ? player2 : player1; //changes player
 			document.getElementById(
 				"turn"
-			).innerHTML = `Its player ${currentPlayer.name}'s turn`;
+			).innerHTML = `Its ${currentPlayer.name}'s turn`;
 		} else {
 			document.getElementById(
 				"turn"

@@ -1,5 +1,5 @@
-const { app, BrowserWindow, Menu, Tray, dialog } = require("electron");
-require("electron-reload")(__dirname);
+const { app, BrowserWindow, Menu } = require("electron");
+//require("electron-reload")(__dirname);
 Menu.setApplicationMenu(false);
 const path = require("path");
 
@@ -10,6 +10,7 @@ const createWindow = () => {
 	const mainWindow = new BrowserWindow({
 		width: 800,
 		height: 900,
+		icon: __dirname + "/icon.ico",
 		resizable: false,
 		fullscreen: false,
 		webPreferences: {
